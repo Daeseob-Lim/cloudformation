@@ -13,7 +13,7 @@
     },
     "ImageId" : {
       "Description" : "Instance Image ID",
-      "Default" : "ami-eec1c380",
+      "Default" : "ami-0de407404c33d1671",
       "Type" : "String"
     },
     "InstanceType" : {
@@ -93,11 +93,11 @@
           "sed -i 's/SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config\n",
           "echo '\n' >> /etc/ssh/sshd_config\n",
           "echo 'Port 22' >> /etc/ssh/sshd_config\n",
-          "mkdir /home/centos/.ssh\n",
-          "curl -s https://raw.githubusercontent.com/devops-book/cloudformation/master/authorized_keys >> /home/centos/.ssh/authorized_keys\n",
-          "chmod 600 /home/centos/.ssh/authorized_keys\n",
-          "chmod 700 /home/centos/.ssh\n",
-          "chown centos:centos -R /home/centos/.ssh\n",
+          "mkdir /home/ubuntu/.ssh\n",
+          "curl -s https://raw.githubusercontent.com/devops-book/cloudformation/master/authorized_keys >> /home/ubuntu/.ssh/authorized_keys\n",
+          "chmod 600 /home/ubuntu/.ssh/authorized_keys\n",
+          "chmod 700 /home/ubuntu/.ssh\n",
+          "chown ubuntu:ubuntu -R /home/ubuntu/.ssh\n",
           "shutdown -r now\n"
           ]]}} 
       }
@@ -130,11 +130,11 @@
           "sed -i 's/SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config\n",
           "echo '\n' >> /etc/ssh/sshd_config\n",
           "echo 'Port 22' >> /etc/ssh/sshd_config\n",
-          "mkdir /home/centos/.ssh\n",
-          "curl -s https://raw.githubusercontent.com/devops-book/cloudformation/master/authorized_keys >> /home/centos/.ssh/authorized_keys\n",
-          "chmod 600 /home/centos/.ssh/authorized_keys\n",
-          "chmod 700 /home/centos/.ssh\n",
-          "chown centos:centos -R /home/centos/.ssh\n",
+          "mkdir /home/ubuntu/.ssh\n",
+          "curl -s https://raw.githubusercontent.com/devops-book/cloudformation/master/authorized_keys >> /home/ubuntu/.ssh/authorized_keys\n",
+          "chmod 600 /home/ubuntu/.ssh/authorized_keys\n",
+          "chmod 700 /home/ubuntu/.ssh\n",
+          "chown ubuntu:ubuntu -R /home/ubuntu/.ssh\n",
           "shutdown -r now\n"
           ]]}} 
       }
