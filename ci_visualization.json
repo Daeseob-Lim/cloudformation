@@ -139,6 +139,8 @@
         }]
       }
     },
+
+
     "LbEip": {
       "Type": "AWS::EC2::EIP",
       "Properties": {
@@ -157,6 +159,8 @@
         "InstanceId": { "Ref": "CiEc2Instance" }
       }
     },
+
+
     "LbEc2Instance" : {
       "Type" : "AWS::EC2::Instance",
       "Properties" : {
@@ -353,6 +357,8 @@
           ]]}} 
       }
     },
+
+
     "PrivateHostedZone" : {
       "Type" : "AWS::Route53::HostedZone",
       "Properties" : {
@@ -366,6 +372,8 @@
         }]
       }
     },
+
+
     "LbLocalDNSRecord" : {
       "Type" : "AWS::Route53::RecordSet",
       "Properties" : {
@@ -437,6 +445,8 @@
       "DependsOn" : "PrivateHostedZone"
     }
   },
+
+
   "Outputs" : {
     "LbAccessIp" : {
       "Description" : "LB access IP address",
